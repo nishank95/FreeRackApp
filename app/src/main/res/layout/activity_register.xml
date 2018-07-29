@@ -111,18 +111,18 @@
                             app:layout_constraintStart_toStartOf="@+id/email_input"
                             app:layout_constraintTop_toBottomOf="@+id/email_input" />
 
-                        <EditText
-                            android:id="@+id/dob_input"
-                            android:layout_width="320dp"
-                            android:layout_height="60dp"
-                            android:layout_marginTop="16dp"
-                            android:background="@drawable/edit_text_rounded"
-                            android:ems="10"
-                            android:hint="Birth Date"
-                            android:inputType="textEmailAddress"
-                            android:padding="10dp"
-                            app:layout_constraintStart_toStartOf="@+id/phone_input"
-                            app:layout_constraintTop_toBottomOf="@+id/phone_input" />
+                <EditText
+                    android:id="@+id/dob_input"
+                    android:layout_width="320dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/edit_text_rounded"
+                    android:ems="10"
+                    android:hint="DOB eg: YYYY-MM-DD"
+                    android:inputType="date"
+                    android:padding="10dp"
+                    app:layout_constraintStart_toStartOf="@+id/phone_input"
+                    app:layout_constraintTop_toBottomOf="@+id/phone_input" />
 
                         <EditText
                             android:id="@+id/password_input"
@@ -157,9 +157,9 @@
                     android:layout_height="55dp"
                     android:layout_marginTop="15dp"
                     android:background="@color/colorPrimary"
-
                     android:padding="5dp"
                     android:text="Proceed"
+                    android:onClick="onProceedClick"
                     android:textColor="@android:color/white"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"

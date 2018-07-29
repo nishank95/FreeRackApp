@@ -37,6 +37,7 @@
                 android:layout_height="96dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginTop="24dp"
+                android:src="@drawable/my_logo"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -60,23 +61,23 @@
             <EditText
                 android:id="@+id/name_input"
                 android:layout_width="320dp"
-                android:layout_height="60dp"
+                android:layout_height="50dp"
                 android:layout_marginStart="8dp"
-                android:layout_marginTop="42dp"
+                android:layout_marginTop="82dp"
                 android:background="@drawable/edit_text_rounded"
                 android:ems="10"
                 android:hint="Username/Email"
                 android:inputType="textEmailAddress|textPersonName"
                 android:padding="10dp"
                 app:layout_constraintEnd_toEndOf="@+id/app_title"
-                app:layout_constraintHorizontal_bias="0.494"
+                app:layout_constraintHorizontal_bias="0.527"
                 app:layout_constraintStart_toStartOf="@+id/app_title"
                 app:layout_constraintTop_toBottomOf="@+id/app_title" />
 
             <EditText
                 android:id="@+id/password_input"
                 android:layout_width="320dp"
-                android:layout_height="60dp"
+                android:layout_height="50dp"
                 android:layout_marginTop="32dp"
                 android:background="@drawable/edit_text_rounded"
                 android:ems="10"
@@ -114,6 +115,26 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/login_btn" />
+
+            <TextView
+                android:id="@+id/form_error"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:lines="2"
+                android:text="Error Description"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"
+                android:textStyle="bold|italic"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toTopOf="@+id/name_input"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/app_title" />
 
         </android.support.constraint.ConstraintLayout>
     </FrameLayout>
